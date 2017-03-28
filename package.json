@@ -17,6 +17,9 @@
     "standard-engine": "6.0.0"
   },
   "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-preset-es2015": "6.24.0",
     "chai": "3.5.0",
     "mocha": "3.2.0"
   },
@@ -38,9 +41,10 @@
     "type": "git",
     "url": "https://github.com/Sagacify/sagastandard.git"
   },
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "build": "cp eslintrc.json dist; cp package.json dist; babel --presets=es2015 --ignore='node_modules' src -d dist",
+    "test": "LOG_LEVEL=fatal mocha --compilers js:babel-core/register"
   },
   "bin": {
     "sagastandard": "./bin/cmd.js"

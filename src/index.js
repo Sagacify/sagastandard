@@ -1,6 +1,6 @@
 // programmatic usage
-const Linter = require('standard-engine').linter;
+import Linter from 'standard-engine';
 
-const opts = require('./options.js');
+import opts from './options.js';
 
 module.exports = new Linter(opts);

@@ -1,4 +1,3 @@
 #!/usr/bin/env node
-
-var opts = require('../src/options.js');
+import opts from'../options.js';
 require('standard-engine').cli(opts);
