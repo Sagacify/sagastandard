@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-sagastandard",
-  "description": "eslint sharable config for sagastandard",
+  "name": "sagastandard",
+  "description": "sagastandard linter",
   "version": "1.0.0",
   "author": "Sagacify <dev@sagacify.com>",
   "bugs": {
