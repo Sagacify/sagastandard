@@ -1,3 +1,4 @@
+import eslint from 'eslint';
 import path from 'path';
 import pkg from './package.json';
 
@@ -7,7 +8,7 @@ export default {
   version: pkg.version,
   homepage: pkg.homepage,
   bugs: pkg.bugs.url,
-  eslint: require('eslint'),
+  eslint,
   eslintConfig: {
     configFile: path.join(__dirname, 'eslintrc.json')
   }
