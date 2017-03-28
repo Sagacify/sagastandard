@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "semistandard",
+    "standard-jsx"
+  ],
+  "rules": {
+    "brace-style": [2, "1tbs", { "allowSingleLine": false}],
+    "curly": [2, "all"],
+    "max-len": [
+      2,
+      80,
+      2,
+      {
+        "ignoreUrls": true
+      }
+    ],
+    "no-console": 2,
+    "no-debugger": 2
+  }
+}
