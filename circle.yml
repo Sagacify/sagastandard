@@ -5,6 +5,7 @@ machine:
 dependencies:
   override:
     - npm install
+    - npm run build
     - wget https://raw.githubusercontent.com/Sagacify/ci-tools/master/run-sonar.sh
     - chmod +x run-sonar.sh
     - ./run-sonar.sh check
@@ -20,4 +21,4 @@ deployment:
     branch: master
     commands:
       - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
-      - npm publish .
+      - npm publish dist
